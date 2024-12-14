@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration Form</title>
+   <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+   <div class="form-container">
+      <div class="form-header">
+         <span class="singup-tab" onclick="showRegisterForm()">Sign up</span>
+         <span class="login-tab" onclick="showLoginForm()">Log in</span>
+      </div>
+      <div class="form-body">
+
+         <div id="register-form" style="display: none;">
+            <form id="feedbackForm">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="John" required>
+                  
+                  <label>Surname</label>
+                  <input type="text" id="surname" name="surname" placeholder="Smith">
+              
+                  <label>Email</label>
+                  <input type="email" id="email" name="email" placeholder="example@gmail.com">
+               
+                  <label>Password</label>
+                  <input type="password" id="password" name="password" placeholder="● ● ● ● ● ● ● ●">
+               
+                  <label>Confirm password</label>
+                  <input type="password" id="password" name="Confirm password" placeholder="● ● ● ● ● ● ● ●">
+              
+               <button type="submit" class="btn-register">Register</button>
+               <div class="divider"></div>
+               <button type="button" class="btn-google">
+                  <span class="google-icon"></span>
+                  <span>Sing up with Google</span>
+               </button>
+            </form>
+         </div>
+
+         <div id="login-form" style="display: block;">
+            <form>
+               <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" placeholder="example@gmail.com">
+               </div>
+               <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" placeholder="● ● ● ● ● ● ● ●">
+               </div>
+               <button type="submit" class="btn-login">Log in</button>
+               <div class="divider"></div>
+               <button type="button" class="btn-google">
+                  <span class="google-icon"></span>
+                  <span>Continue with Google</span>
+               </button>
+            </form>
+         </div>
+      </div>
+   </div>
+   <a href="feedback.php" title="feedbackForm" target="-self">feedbackForm</a>
+   <script src="./js/register.js" defer></script>
+   <script src="./js/register2.js" defer></script>
+</body>
+
+</html>
